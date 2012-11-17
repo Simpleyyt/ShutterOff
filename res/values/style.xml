@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomWindowTitleBackground">
+        <item name="android:background">@drawable/title_bg</item>
+    </style>
+    <style name="CustomWindowTitleText">
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="NoTitleBar" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleSize">42.0dip</item>
+        <item name="android:windowTitleStyle">@style/CustomWindowTitleText</item>
+        <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
+    </style>
+    <style name="MyDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@drawable/list_blockbg_single_selector</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="Default" parent="@style/NoTitleBar">
+        <item name="android:windowNoTitle">false</item>
+    </style>
+</resources>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:umadsdk="http://schemas.android.com/apk/res/com.example.com.simpleyyt.shutteroff"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/setting_bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0.0px"
+        android:layout_weight="1.0"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollbarThumbVertical="@drawable/scrollbar_handle_vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6.0dip"
+                android:layout_marginRight="6.0dip"
+                android:layout_marginTop="6.0dip" >
+
+                <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/shutter_sound"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:src="@drawable/setting_general" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5.0dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/setting" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6.0dip"
+                android:layout_marginRight="6.0dip"
+                android:layout_marginTop="6.0dip"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="54.0dip"
+                    android:background="@drawable/list_blockbg_top_selector"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:onClick="shutteroffButton_Clicked"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="16.0dip" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10.0dip"
+                        android:contentDescription="@string/shutter_sound"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:src="@drawable/setting_sound" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:text="@string/shutter_sound"
+                        android:textColor="@color/setting_text1"
+                        android:textSize="18.0dip" />
+
+                    <CheckBox
+                        android:id="@+id/shutter_sound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/setting_checkbox"
+                        android:clickable="false"
+                        android:paddingRight="33.0dip" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_marginRight="1.0dip"
+                    android:background="@drawable/setting_line" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="54.0dip"
+                    android:background="@drawable/list_blockbg_bottom_selector"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:onClick="shuttershiftButton_Clicked"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="16.0dip" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10.0dip"
+                        android:contentDescription="@string/shutter_shift"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:src="@drawable/setting_vibrate" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:text="@string/shutter_shift"
+                        android:textColor="@color/setting_text1"
+                        android:textSize="18.0dip" />
+
+                    <CheckBox
+                        android:id="@+id/shutter_shift"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/setting_checkbox"
+                        android:clickable="false"
+                        android:paddingRight="33.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6.0dip"
+                android:layout_marginRight="6.0dip"
+                android:layout_marginTop="6.0dip" >
+
+                <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/help_feedback"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:src="@drawable/setting_help" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5.0dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/help_feedback" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12.0dip"
+                android:layout_marginLeft="6.0dip"
+                android:layout_marginRight="6.0dip"
+                android:layout_marginTop="6.0dip"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="54.0dip"
+                    android:background="@drawable/list_blockbg_top_selector"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:onClick="help_Clicked"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="16.0dip" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10.0dip"
+                        android:contentDescription="@string/help"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:src="@drawable/setting_help" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:text="@string/help"
+                        android:textColor="@color/setting_text1"
+                        android:textSize="18.0dip" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/help"
+                        android:src="@drawable/setting_arrow" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_marginRight="1.0dip"
+                    android:background="@drawable/setting_line" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="54.0dip"
+                    android:background="@drawable/list_blockbg_bottom_selector"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:onClick="feedback_Clicked"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="16.0dip" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10.0dip"
+                        android:contentDescription="@string/feedback"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:src="@drawable/setting_notice" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:text="@string/feedback"
+                        android:textColor="@color/setting_text1"
+                        android:textSize="18.0dip" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/feedback"
+                        android:src="@drawable/setting_arrow" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <net.youmi.android.AdView
+                    android:id="@+id/adView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    umadsdk:backgroundColor="#4076AA"
+                    umadsdk:backgroundTransparent="155"
+                    umadsdk:textColor="#ffffff" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

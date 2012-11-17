@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="trans">#00000000</item>
+    <item type="drawable" name="preview_btn_bg_press">#ff000000</item>
+    <item type="drawable" name="chatwindow_btn_press">#9936b5e3</item>
+    <item type="drawable" name="sc_trans">#00000000</item>
+    <item type="drawable" name="option_dilog_item_normal">#ef2a2a2a</item>
+    <item type="drawable" name="option_dilog_item_press">#ff3a3a3a</item>
+    <item type="drawable" name="setting_line1">#ffc9c9c9</item>
+    <item type="drawable" name="setting_line2">#ffffffff</item>
+    <item type="drawable" name="pressed_forebground">#4d000000</item>
+</resources>

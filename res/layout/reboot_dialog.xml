@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:text="@string/tip"
+        android:textColor="@color/title_bg"
+        android:textSize="20dip"
+        android:textStyle="bold"
+        tools:context=".RebootDialog" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginLeft="3.0dip"
+        android:layout_marginRight="3.0dip"
+        android:background="@drawable/setting_line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tip_content"
+        android:textSize="15dip"
+        android:textColor="@android:color/black"
+        android:layout_margin="5dip"
+        android:textStyle="bold"
+        tools:context=".RebootDialog" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <Button
+            android:id="@+id/ok_btn"
+            android:layout_width="76dp"
+            android:layout_height="37dp"
+            android:layout_margin="5dip"
+            android:onClick="ok_Clicked"
+            android:background="@drawable/confirm_selector" />
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="76dp"
+            android:layout_height="37dp"
+            android:layout_margin="5dip"
+            android:onClick="cancel_Clicked"
+            android:background="@drawable/cancel_selector" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<resources>
+
+    <string name="app_name">快门消音</string>
+    <string name="title_activity_main">快门消音</string>
+    <string name="shutteroffFailedMsg">快门声%1$s失败，可能设备不支持或者设备未获取ROOT权限。</string>
+    <string name="shutteroffSuccessedMsg">快门声已成功%1$s</string>
+    <string name="shuttershiftSuccessedMsg">%1$s成功。重启手机后生效。</string>
+    <string name="shuttershiftFailedMsg">%1$s失败，可能设备不支持或者设备未获取ROOT权限。</string>
+    <string name="appwidget">添加桌面小插件</string>
+    <string name="appwidget_tip">在桌面添加小工具，便可以一键关闭快门声。</string>
+    <string name="shutter_sound_tip">关闭快门声后，屏幕提示成功后，打开系统照相机后，便会发现快门声已关闭。</string>
+    <string name="shutter_shift_tip"> 启用该功能后，手机重启生效。手机在静音模式下，快门声也会随着静音。</string>
+    <string name="notice">提醒</string>
+    <string name="notice_tip">使用本应用手机必须已经获得ROOT权限。本应用适用大部分机型。</string>
+    <string name="shutter_sound">快门声</string>
+    <string name="shutter_shift">静音时快门声关闭</string>
+    <string name="feedback">反馈</string>
+    <string name="help">帮助</string>
+    <string name="help_feedback">帮助与反馈</string>
+    <string name="setting">设置</string>
+    <string name="title_activity_help">帮助</string>
+    <string name="app_name_version">快门消音 v2.0</string>
+    <string name="author">作者</string>
+    <string name="author_tip">微博：摇一摇SimpleLife\n主页：http://weibo.com/u/1836017133\n邮箱：simpleyyt@gmail.com</string>
+    <string name="tip">提示</string>
+    <string name="tip_content">此操作需重启手机后才能生效，按确定重启手机。</string>
+
+</resources>
